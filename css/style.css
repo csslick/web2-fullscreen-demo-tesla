@@ -47,9 +47,13 @@ header .gnb .depth1 > li {
     text-align: center;
 }
 
+/* 1depth메뉴 hover시 2depth메뉴 표시 */
+
+
+
 /* 2단계 메뉴 */
 header .gnb .depth2 {
-    /* display: none; */
+    display: none;
 }
 
 #demoVid {
