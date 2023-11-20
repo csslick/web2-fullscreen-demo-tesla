@@ -23,8 +23,14 @@ header {
     background: #333;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+header h1 {
+    /* outline: 1px solid red; */
+    line-height: 12.27px;
 }
 
 header h1 img { 
@@ -47,13 +53,23 @@ header .gnb .depth1 > li {
     text-align: center;
 }
 
-/* 1depth메뉴 hover시 2depth메뉴 표시 */
-
-
-
 /* 2단계 메뉴 */
 header .gnb .depth2 {
+    /* 기본 안보임 상태 */
     display: none;
+}
+
+/* 1depth메뉴 hover시 2depth메뉴 표시 */
+/* .depth1 li가 hover되면(조건) .depth2를 선택 */
+header .gnb .depth1 li:hover .depth2 {
+    display: block;
+}
+
+header nav.gnb {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #demoVid {
